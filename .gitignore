@@ -3,3 +3,4 @@ compose.env
 .idea
 data
 test_db
+__pycache__
