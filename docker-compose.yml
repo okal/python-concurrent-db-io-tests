@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:latest
+    env_file:
+      - compose.env
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data:/var/lib/mysql
+      - ./initdb:/docker-entrypoint-initdb.d
