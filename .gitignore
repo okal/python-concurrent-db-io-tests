@@ -1,0 +1,5 @@
+.env
+compose.env
+.idea
+data
+test_db
