@@ -6,8 +6,9 @@ from db import queries, session_factory
 def execute_query(query):
     session = scoped_session(session_factory)()
     result = session.execute(query)
-    print(result[0])
+    print(list(result)[0])
     print(result.rowcount)
+    session.close()
 
 
 for query in queries:
